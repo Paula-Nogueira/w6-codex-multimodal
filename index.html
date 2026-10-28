@@ -20,20 +20,21 @@
         <section class="image-describer">
             <h1>Ollama Multi-modal Image Describer</h1>
 
-            <label for="image">Upload Image:</label>
-            <input id="image" type="file" accept="image/*">
+            <label for="image">Upload up to 2 images:</label>
+            <input id="image" type="file" accept="image/*" multiple>
 
             <div class="image-preview" id="preview">
                 <span>No image selected</span>
-                <img id="preview-image" alt="Selected image preview" hidden>
             </div>
 
-            <button id="send" type="button">Describe Image</button>
+            <button id="send" type="button">Describe Images</button>
 
             <hr>
 
-            <h2>LLM Response:</h2>
-            <pre id="result" aria-live="polite">Waiting for input...</pre>
+            <h2>Image Descriptions:</h2>
+            <div id="result" class="descriptions" aria-live="polite">
+                <p>Waiting for input...</p>
+            </div>
         </section>
     </main>
 </body>
