@@ -42,7 +42,7 @@ sendButton.addEventListener("click", async () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         model: "gemma3",
-        prompt: "Give me a JSON formatted list with the most important features of this image, and their confidence values.",
+        prompt: "Describe this image.",
         images: [dataUrl.split(",")[1]],
         stream: false
       })
